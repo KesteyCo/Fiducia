@@ -2939,3 +2939,13 @@ body {
     transform: none !important;
   }
 }
+/* ABSOLUTE FINAL NAVBAR LOGO SPEED OVERRIDE */
+.nav-simple-full {
+  animation: fudiciaPreciseFullLogoCycle 7s linear infinite !important;
+  animation-duration: 7s !important;
+}
+
+.nav-simple-mini {
+  animation: fudiciaPreciseMiniLogoCycle 7s linear infinite !important;
+  animation-duration: 7s !important;
+}
