@@ -2788,3 +2788,114 @@ body.theme-light .nav-simple-mini-light {
     animation: none !important;
   }
 }
+/* HARD MOBILE WIDTH FIX */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  body,
+  main,
+  header,
+  nav,
+  section,
+  footer,
+  .container,
+  .section-inner,
+  .nav-inner,
+  .hero,
+  .hero-inner,
+  .about-grid,
+  .profiles-grid,
+  .profile-grid,
+  .cards-grid {
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  .container,
+  .section-inner,
+  .nav-inner,
+  .hero-inner {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  img,
+  svg,
+  video,
+  canvas {
+    max-width: 100% !important;
+    height: auto;
+  }
+
+  /* Navbar */
+  .nav-inner,
+  .navbar,
+  .site-header,
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand,
+  .brand-simple-cycle,
+  .brand-logo,
+  .logo {
+    max-width: calc(100vw - 95px) !important;
+    min-width: 0 !important;
+  }
+
+  .brand img,
+  .brand-logo img,
+  .logo img {
+    max-width: 190px !important;
+    height: auto !important;
+  }
+
+  .menu-toggle,
+  .hamburger,
+  .nav-toggle {
+    position: relative !important;
+    right: auto !important;
+    margin-left: auto !important;
+    flex-shrink: 0 !important;
+    width: 44px !important;
+    height: 44px !important;
+    z-index: 99999 !important;
+  }
+
+  /* Floating lightbulb + WhatsApp */
+  .floating-actions,
+  .floating-buttons,
+  .quick-actions {
+    position: fixed !important;
+    right: 14px !important;
+    bottom: 18px !important;
+    transform: none !important;
+    z-index: 99999 !important;
+  }
+
+  .theme-toggle,
+  .light-toggle,
+  .theme-toggle-wrap,
+  .whatsapp-float {
+    right: 14px !important;
+    transform: none !important;
+    z-index: 99999 !important;
+  }
+}
