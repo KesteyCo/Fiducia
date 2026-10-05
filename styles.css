@@ -2899,3 +2899,52 @@ body {
     z-index: 99999 !important;
   }
 }
+/* Fix mobile hamburger dropdown being clipped */
+.site-header,
+.header,
+.navbar,
+.nav,
+.nav-inner,
+.header-inner {
+  overflow: visible !important;
+}
+/* Chrome mobile width correction */
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    touch-action: pan-y;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .site-header,
+  .navbar,
+  .nav-inner,
+  .header-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .floating-actions,
+  .floating-buttons,
+  .quick-actions {
+    position: fixed !important;
+    right: 14px !important;
+    left: auto !important;
+    transform: none !important;
+  }
+
+  .theme-toggle,
+  .light-toggle,
+  .theme-toggle-wrap,
+  .whatsapp-float {
+    right: 14px !important;
+    left: auto !important;
+    transform: none !important;
+  }
+}
