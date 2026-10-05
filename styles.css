@@ -2488,7 +2488,7 @@ body:not(.theme-light) .partner-logo:hover {
   height: 54px !important;
   opacity: 1;
   z-index: 2 !important;
-  animation: fudiciaPreciseFullLogoCycle 21.4s linear infinite !important;
+  animation: fudiciaPreciseFullLogoCycle 7s linear infinite !important;
   will-change: opacity;
 }
 
@@ -2534,7 +2534,7 @@ body.theme-light .nav-simple-mini-light {
   z-index: 3 !important;
   pointer-events: none !important;
   transform-origin: center center !important;
-  animation: fudiciaPreciseMiniLogoCycle 21.4s linear infinite !important;
+  animation: fudiciaPreciseMiniLogoCycle 7s linear infinite !important;
   will-change: opacity, transform;
 }
 
@@ -2561,15 +2561,15 @@ body.theme-light .nav-simple-mini-light {
    Visible 15s, fades out, stays hidden through mini-logo phase,
    fades in only after mini-logo has fully faded out. */
 @keyframes fudiciaPreciseFullLogoCycle {
-  0%, 70.09% {
+  0%, 68% {
     opacity: 1;
   }
 
-  73.83% {
+  75% {
     opacity: 0;
   }
 
-  97.20% {
+  94% {
     opacity: 0;
   }
 
@@ -2578,47 +2578,38 @@ body.theme-light .nav-simple-mini-light {
   }
 }
 
-/* Mini-logo:
-   Does not appear until the full logo fade-out is complete.
-   Fades in, shakes once, remains stationary for 3s,
-   fades out fully before full logo returns. */
 @keyframes fudiciaPreciseMiniLogoCycle {
-  0%, 73.83% {
+  0%, 75% {
     opacity: 0;
     transform: translateY(-50%) scale(.94) rotate(0deg);
   }
 
-  76.64% {
+  78% {
     opacity: 1;
     transform: translateY(-50%) scale(.94) rotate(0deg);
   }
 
-  77.57% {
+  80% {
     opacity: 1;
     transform: translateY(-50%) scale(.94) rotate(-5deg);
   }
 
-  78.50% {
+  82% {
     opacity: 1;
     transform: translateY(-50%) scale(.94) rotate(5deg);
   }
 
-  79.44% {
+  84% {
     opacity: 1;
     transform: translateY(-50%) scale(.94) rotate(-3deg);
   }
 
-  80.37% {
-    opacity: 1;
-    transform: translateY(-50%) scale(.94) rotate(3deg);
-  }
-
-  81.31%, 94.39% {
+  86%, 91% {
     opacity: 1;
     transform: translateY(-50%) scale(.94) rotate(0deg);
   }
 
-  97.20%, 100% {
+  94%, 100% {
     opacity: 0;
     transform: translateY(-50%) scale(.94) rotate(0deg);
   }
