@@ -2941,11 +2941,11 @@ body {
 }
 /* ABSOLUTE FINAL NAVBAR LOGO SPEED OVERRIDE */
 .nav-simple-full {
-  animation: fudiciaPreciseFullLogoCycle 7s linear infinite !important;
-  animation-duration: 7s !important;
+  animation: fudiciaPreciseFullLogoCycle 9s linear infinite !important;
+  animation-duration: 9s !important;
 }
 
 .nav-simple-mini {
-  animation: fudiciaPreciseMiniLogoCycle 7s linear infinite !important;
-  animation-duration: 7s !important;
+  animation: fudiciaPreciseMiniLogoCycle 9s linear infinite !important;
+  animation-duration: 9s !important;
 }
